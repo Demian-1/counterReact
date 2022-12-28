@@ -1,2 +1,0 @@
-# counterReact
-Curso React Contador
