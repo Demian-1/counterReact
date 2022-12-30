@@ -2,6 +2,8 @@
 
 import './style.css';
 
+import PropTypes from 'prop-types';
+
 const nombree = {
     message : 'holaa',
     title: 'demians'
@@ -9,10 +11,10 @@ const nombree = {
 
 const saluda = (nombre) =>`hola amigo ${nombre}, a ver si ya terminas de aprender React`;
 
-export const FirstApp = ( {title="hola me llamo demian", subtitle} ) => {// no se puede poner un objeto, pero si se puede serializar
+export const FirstApp = ( {title, subtitle} ) => {// no se puede poner un objeto, pero si se puede serializar
   
     // console.log(props)
-    
+
     return (
     <>
         {/*<h2>{ JSON.stringify(nombree)  }</h2>*/}
@@ -20,4 +22,9 @@ export const FirstApp = ( {title="hola me llamo demian", subtitle} ) => {// no s
         <p>{subtitle + 1}</p>
     </>
   )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string .isRequired,
+    subtitle: PropTypes.number.isRequired
 }
