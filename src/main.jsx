@@ -6,9 +6,10 @@ import { HelloWorldApp } from './HelloWorldApp';
 
 // Esto es nuestro punto de entrada:
 
+// Para pasar valores como numeros se pone entre {}
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         <HelloWorldApp />
-        <FirstApp/>
+        <FirstApp title="Hola soy santi" subtitle={123}/>
     </React.StrictMode>
 )

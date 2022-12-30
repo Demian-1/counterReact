@@ -9,12 +9,15 @@ const nombree = {
 
 const saluda = (nombre) =>`hola amigo ${nombre}, a ver si ya terminas de aprender React`;
 
-export const FirstApp = () => {// no se puede poner un objeto, pero si se puede serializar
-  return (
+export const FirstApp = ( {title="hola me llamo demian", subtitle} ) => {// no se puede poner un objeto, pero si se puede serializar
+  
+    // console.log(props)
+    
+    return (
     <>
         {/*<h2>{ JSON.stringify(nombree)  }</h2>*/}
-        <h2>{ saluda('Demian') }</h2>
-        <p>Soy un subtitulo</p>
+        <h2>{ title }</h2>
+        <p>{subtitle + 1}</p>
     </>
   )
 }
