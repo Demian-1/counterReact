@@ -1,5 +1,7 @@
 // para no tener que usar un div y poder romper los estilos se usa <Fragment>
 
+import './style.css';
+
 const nombree = {
     message : 'holaa',
     title: 'demians'
