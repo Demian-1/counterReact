@@ -19,12 +19,19 @@ export const FirstApp = ( {title, subtitle} ) => {// no se puede poner un objeto
     <>
         {/*<h2>{ JSON.stringify(nombree)  }</h2>*/}
         <h2>{ title }</h2>
-        <p>{subtitle + 1}</p>
+        <p>{subtitle}</p>
     </>
   )
 }
 
+// Usualmente se colocan al final
+
 FirstApp.propTypes = {
     title: PropTypes.string .isRequired,
-    subtitle: PropTypes.number.isRequired
+    subtitle: PropTypes.number
+}
+
+FirstApp.defaultProps = {
+    title: 'No hay titulo',
+    subtitle: 'No hay subtitulo'
 }
