@@ -27,7 +27,7 @@ export const FirstApp = ( {title, subtitle} ) => {// no se puede poner un objeto
 // Usualmente se colocan al final
 
 FirstApp.propTypes = {
-    title: PropTypes.string .isRequired,
+    title: PropTypes.string.isRequired,
     subtitle: PropTypes.number
 }
 
