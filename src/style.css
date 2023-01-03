@@ -28,6 +28,7 @@ body{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 9px;
 }
 
 .button-74:hover {
